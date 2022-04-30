@@ -1,0 +1,127 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background:rgb(14, 14, 29);
+    font-family: 'Neonderthaw', cursive;
+    color:rgb(255, 246, 228);
+}
+h1 {
+    line-height:0.9em;
+    font-size:80px;
+    text-shadow:0 0 10px #a5a521,
+                0 0 20px #a5a521,
+                0 0 40px #a5a521,
+                0 0 80px #a5a521,
+                0 0 160px #a5a521;
+    margin:50px auto;
+    text-align:center;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0001);
+}
+.status-section {
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    padding:30px 0;
+}
+.status {
+    width:50%;
+}
+.status h3 {
+    font-size:40px;
+    text-align:center;
+    text-shadow:0 0 10px skyblue,
+                0 0 20px skyblue,
+                0 0 40px skyblue,
+                0 0 80px skyblue;
+}
+i.far {
+    font-size:40px;
+}
+.result-section {
+    padding:20px;
+    height:50px;
+}
+.result {
+    font-size:40px;
+    text-align:center;
+    opacity:0;
+}
+.result.win {
+    text-shadow:0 0 10px lime,
+                0 0 20px lime,
+                0 0 40px lime,
+                0 0 80px lime;
+}
+.result.lose {
+    text-shadow:0 0 10px red,
+                0 0 20px red,
+                0 0 40px red,
+                0 0 80px red;
+}
+.result.tie {
+    text-shadow:0 0 10px orange,
+                0 0 20px orange,
+                0 0 40px orange,
+                0 0 80px orange;
+}
+.compete-section {
+    display:flex;
+    flex-direction:row;
+    box-sizing:border-box;
+    padding:20px;
+}
+.compete {
+    width:50%;
+    height:100px;
+}
+.compete .fas {
+    font-size:100px;
+    display:block;
+    text-align:center;
+    opacity:0;
+}
+.btn-section {
+    padding:50px;
+    width:600px;
+    height:150px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 auto;
+}
+.btn-section i.far {
+    font-size:120px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.btn-section i.far:hover {
+    transform:scale(1.2);
+}
+.btn-section i.far.fa-hand-rock:hover {
+    text-shadow:0 0 10px blue,
+                0 0 20px blue,
+                0 0 40px blue,
+                0 0 80px blue;
+}
+.btn-section i.far.fa-hand-paper:hover {
+    text-shadow:0 0 10px pink,
+                0 0 20px pink,
+                0 0 40px pink,
+                0 0 80px pink;
+}
+.btn-section i.far.fa-hand-scissors:hover {
+    text-shadow:0 0 10px greenyellow,
+                0 0 20px greenyellow,
+                0 0 40px greenyellow,
+                0 0 80px greenyellow;
+}
+
+
+
+
+
+
