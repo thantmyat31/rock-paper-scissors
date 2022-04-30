@@ -7,6 +7,9 @@ body {
     font-family: 'Neonderthaw', cursive;
     color:rgb(255, 246, 228);
 }
+.wrapper.active {
+    filter: blur(15px);
+}
 h1 {
     line-height:0.9em;
     font-size:80px;
@@ -119,8 +122,55 @@ i.far {
                 0 0 40px greenyellow,
                 0 0 80px greenyellow;
 }
-
-
+.modal-box {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+}
+.modal-box.active {
+    display:block;
+}
+.modal-box .inner {
+    padding:40px 80px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    border-radius:10px;
+}
+.modal-box .inner.win {
+    background:greenyellow;
+    box-shadow: 0 0 20px greenyellow,
+                0 0 40px greenyellow,
+                0 0 80px greenyellow;
+}
+.modal-box .inner.lose {
+    background:red;
+    box-shadow: 0 0 20px red,
+                0 0 40px red,
+                0 0 80px red;
+}
+.modal-box .inner h3 {
+    font-size:30px;
+    color:#000;
+    text-transform:uppercase;
+    text-align:center;
+}
+.modal-box .inner button {
+    padding:10px 20px;
+    border:1px solid #000;
+    outline:none;
+    box-shadow:none;
+    display:block;
+    margin:30px auto 0;
+    background:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
 
 
 
