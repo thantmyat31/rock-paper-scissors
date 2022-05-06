@@ -171,7 +171,31 @@ i.far {
     border-radius:5px;
     cursor:pointer;
 }
-
+footer {
+    position:fixed;
+    bottom:20px;
+    left:0;
+    width:100%;
+}
+footer p {
+    font-family:sans-serif;
+    text-align:center;
+    letter-spacing:2px;
+    font-size:14px;
+}
+footer p a {
+    color:#fff;
+    margin-left:10px;
+    position:relative;
+    top:2px;
+}
+footer p a i {
+    font-size:1.4em;
+    transition:0.3s;
+}
+footer p a i:hover {
+    transform:scale(1.2);
+}
 
 
 
